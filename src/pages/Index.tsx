@@ -1,12 +1,270 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const services = [
+    {
+      icon: "Home",
+      title: "Проживание",
+      description: "Комфортабельные домики с видом на реку",
+      price: "от 2500₽/сутки"
+    },
+    {
+      icon: "Fish",
+      title: "Рыбалка",
+      description: "Оборудованные места для рыбалки",
+      price: "включено"
+    },
+    {
+      icon: "Anchor",
+      title: "Аренда лодок",
+      description: "Моторные и весельные лодки",
+      price: "от 1000₽/день"
+    },
+    {
+      icon: "Utensils",
+      title: "Питание",
+      description: "Кухня для самостоятельного приготовления",
+      price: "бесплатно"
+    }
+  ];
+
+  const gallery = [
+    {
+      url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/00dd8bb2-fe15-4e49-aa73-df9b5a7007be.jpg",
+      alt: "База на берегу Камы"
+    },
+    {
+      url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/5775703b-e088-4f3f-98b7-838725bce6d3.jpg",
+      alt: "Улов"
+    },
+    {
+      url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/904cfedc-87e6-41a9-baad-1b96a9653a45.jpg",
+      alt: "Интерьер домика"
+    }
+  ];
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen">
+      <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Icon name="Waves" className="text-primary" size={32} />
+            <span className="text-2xl font-bold text-primary">Камское устье</span>
+          </div>
+          <div className="hidden md:flex gap-6">
+            <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
+            <a href="#gallery" className="text-foreground hover:text-primary transition-colors">Фото</a>
+            <a href="#location" className="text-foreground hover:text-primary transition-colors">Как добраться</a>
+            <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
+          </div>
+        </nav>
+      </header>
+
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-background to-secondary/10 pt-20">
+        <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/00dd8bb2-fe15-4e49-aa73-df9b5a7007be.jpg')] bg-cover bg-center opacity-20"></div>
+        <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
+            Рыболовная база<br />
+            <span className="text-primary">Камское устье</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
+            Отдых на природе и отличная рыбалка в самом живописном месте Татарстана
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="text-lg px-8 py-6" asChild>
+              <a href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageCircle" className="mr-2" size={24} />
+                WhatsApp
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
+              <a href="https://t.me/yourChannel" target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" className="mr-2" size={24} />
+                Telegram
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+            Наши услуги
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service, index) => (
+              <Card 
+                key={index} 
+                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-scale-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Icon name={service.icon} className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                  <p className="text-muted-foreground mb-4">{service.description}</p>
+                  <p className="text-lg font-semibold text-primary">{service.price}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+            Фотогалерея
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {gallery.map((image, index) => (
+              <div 
+                key={index} 
+                className="relative overflow-hidden rounded-lg aspect-video group animate-scale-in"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <img 
+                  src={image.url} 
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <p className="text-white font-semibold p-4">{image.alt}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="location" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+            Как добраться
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6 animate-fade-in">
+              <div className="flex gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Car" className="text-primary" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">На автомобиле</h3>
+                  <p className="text-muted-foreground">
+                    Из Казани: трасса М7 в сторону Набережных Челнов, после Камского Устья поворот направо по указателю.
+                    Примерно 2,5 часа в пути.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Bus" className="text-primary" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">На автобусе</h3>
+                  <p className="text-muted-foreground">
+                    Автобус Казань - Камское Устье от автовокзала "Южный". 
+                    Отправление ежедневно в 9:00 и 15:00. Мы встретим вас на остановке.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="MapPin" className="text-primary" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Координаты</h3>
+                  <p className="text-muted-foreground">
+                    55.4567° N, 51.7891° E<br />
+                    РТ, Лаишевский район, пос. Камское Устье
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg animate-scale-in h-[400px]">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=51.789100%2C55.456700&z=12&l=map"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Карта проезда"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="py-20 bg-gradient-to-br from-primary to-secondary text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 animate-fade-in">
+            Свяжитесь с нами
+          </h2>
+          <p className="text-xl mb-12 opacity-90">
+            Ответим на все вопросы и поможем забронировать место
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Icon name="Phone" className="mx-auto mb-4" size={32} />
+                <h3 className="font-bold text-lg mb-2">Телефон</h3>
+                <a href="tel:+79999999999" className="hover:underline">+7 (999) 999-99-99</a>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Icon name="Mail" className="mx-auto mb-4" size={32} />
+                <h3 className="font-bold text-lg mb-2">Email</h3>
+                <a href="mailto:info@kamskoe-ustie.ru" className="hover:underline">info@kamskoe-ustie.ru</a>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Icon name="Clock" className="mx-auto mb-4" size={32} />
+                <h3 className="font-bold text-lg mb-2">Режим работы</h3>
+                <p>Круглосуточно,<br />7 дней в неделю</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="flex gap-4 justify-center">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
+              <a href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer">
+                <Icon name="MessageCircle" className="mr-2" size={24} />
+                WhatsApp
+              </a>
+            </Button>
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
+              <a href="https://t.me/yourChannel" target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" className="mr-2" size={24} />
+                Telegram канал
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-foreground text-background py-8">
+        <div className="container mx-auto px-4 text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Icon name="Waves" size={24} />
+            <span className="text-xl font-bold">Камское устье</span>
+          </div>
+          <p className="text-sm opacity-80">
+            © 2024 Рыболовная база "Камское устье". Все права защищены.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
