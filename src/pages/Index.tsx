@@ -5,10 +5,16 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const services = [
     {
-      icon: "Home",
-      title: "Проживание",
-      description: "Комфортабельные домики с видом на реку",
-      price: "от 2500₽/сутки"
+      icon: "HomeIcon",
+      title: "Отдельный дом",
+      description: "С панорамными окнами, красивым видом и спуском к воде",
+      price: "от 5000₽/сутки"
+    },
+    {
+      icon: "BedDouble",
+      title: "Комнаты на базе",
+      description: "Комфортное проживание в общем корпусе базы",
+      price: "от 1500₽/сутки"
     },
     {
       icon: "Fish",
@@ -21,12 +27,6 @@ const Index = () => {
       title: "Аренда лодок",
       description: "Моторные и весельные лодки",
       price: "от 1000₽/день"
-    },
-    {
-      icon: "Utensils",
-      title: "Питание",
-      description: "Кухня для самостоятельного приготовления",
-      price: "бесплатно"
     }
   ];
 
@@ -74,13 +74,13 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/79046779322" target="_blank" rel="noopener noreferrer">
                 <Icon name="MessageCircle" className="mr-2" size={24} />
                 WhatsApp
               </a>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-              <a href="https://t.me/yourChannel" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/FishVolgaKamskoyeUstye" target="_blank" rel="noopener noreferrer">
                 <Icon name="Send" className="mr-2" size={24} />
                 Telegram
               </a>
@@ -155,8 +155,7 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-2">На автомобиле</h3>
                   <p className="text-muted-foreground">
-                    Из Казани: трасса М7 в сторону Набережных Челнов, после Камского Устья поворот направо по указателю.
-                    Примерно 2,5 часа в пути.
+                    Из Казани примерно 1,5 часа в пути. Следуйте по трассе М7 в сторону Камского Устья.
                   </p>
                 </div>
               </div>
@@ -168,8 +167,8 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-2">На автобусе</h3>
                   <p className="text-muted-foreground">
-                    Автобус Казань - Камское Устье от автовокзала "Южный". 
-                    Отправление ежедневно в 9:00 и 15:00. Мы встретим вас на остановке.
+                    Автобус Казань - Камское Устье от Северного вокзала Казани. 
+                    Мы встретим вас на остановке.
                   </p>
                 </div>
               </div>
@@ -181,7 +180,7 @@ const Index = () => {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Координаты</h3>
                   <p className="text-muted-foreground">
-                    55.4567° N, 51.7891° E<br />
+                    55.173154° N, 49.267368° E<br />
                     РТ, Лаишевский район, пос. Камское Устье
                   </p>
                 </div>
@@ -190,7 +189,7 @@ const Index = () => {
 
             <div className="rounded-lg overflow-hidden shadow-lg animate-scale-in h-[400px]">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=51.789100%2C55.456700&z=12&l=map"
+                src="https://yandex.ru/map-widget/v1/?ll=49.267368%2C55.173154&z=14&l=map&pt=49.267368,55.173154,pm2rdm"
                 width="100%"
                 height="100%"
                 frameBorder="0"
@@ -216,15 +215,15 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <Icon name="Phone" className="mx-auto mb-4" size={32} />
                 <h3 className="font-bold text-lg mb-2">Телефон</h3>
-                <a href="tel:+79999999999" className="hover:underline">+7 (999) 999-99-99</a>
+                <a href="tel:+79046779322" className="hover:underline">+7 (904) 677-93-22</a>
               </CardContent>
             </Card>
 
             <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
               <CardContent className="p-6 text-center">
-                <Icon name="Mail" className="mx-auto mb-4" size={32} />
-                <h3 className="font-bold text-lg mb-2">Email</h3>
-                <a href="mailto:info@kamskoe-ustie.ru" className="hover:underline">info@kamskoe-ustie.ru</a>
+                <Icon name="Send" className="mx-auto mb-4" size={32} />
+                <h3 className="font-bold text-lg mb-2">Telegram</h3>
+                <a href="https://t.me/FishVolgaKamskoyeUstye" target="_blank" rel="noopener noreferrer" className="hover:underline">@FishVolgaKamskoyeUstye</a>
               </CardContent>
             </Card>
 
@@ -239,13 +238,13 @@ const Index = () => {
 
           <div className="flex gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-              <a href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/79046779322" target="_blank" rel="noopener noreferrer">
                 <Icon name="MessageCircle" className="mr-2" size={24} />
                 WhatsApp
               </a>
             </Button>
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-              <a href="https://t.me/yourChannel" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/FishVolgaKamskoyeUstye" target="_blank" rel="noopener noreferrer">
                 <Icon name="Send" className="mr-2" size={24} />
                 Telegram канал
               </a>
