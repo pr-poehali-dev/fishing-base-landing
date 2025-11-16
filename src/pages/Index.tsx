@@ -27,6 +27,24 @@ const Index = () => {
       title: "Аренда лодок",
       description: "Моторные и весельные лодки",
       price: "от 1000₽/день"
+    },
+    {
+      icon: "Snowflake",
+      title: "Аренда снегоходов",
+      description: "Снегоходы с санями, подвоз к месту рыбалки",
+      price: "договорная"
+    },
+    {
+      icon: "User",
+      title: "Егерь",
+      description: "Услуги профессионального егеря",
+      price: "по запросу"
+    },
+    {
+      icon: "Flame",
+      title: "Русская баня",
+      description: "Традиционная баня на дровах",
+      price: "от 2000₽/сеанс"
     }
   ];
 
@@ -66,8 +84,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/00dd8bb2-fe15-4e49-aa73-df9b5a7007be.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            Рыболовная база<br />
-            <span className="text-primary">Камское устье</span>
+            Рыболовная база <span className="text-primary">Fish Volga</span><br />
+            <span className="text-2xl md:text-4xl">в Камском Устье</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
             Отдых на природе и отличная рыбалка в самом живописном месте Татарстана
@@ -94,7 +112,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
             Наши услуги
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
