@@ -143,7 +143,7 @@ const Index = () => {
       <section id="video" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
-            Видео о базе
+            Идеальные выходные мужчин
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="relative rounded-lg overflow-hidden shadow-2xl animate-scale-in" style={{ paddingBottom: '56.25%' }}>
