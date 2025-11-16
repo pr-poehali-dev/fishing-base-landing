@@ -45,6 +45,12 @@ const Index = () => {
       title: "Русская баня",
       description: "Традиционная баня на дровах",
       price: "от 2000₽/сеанс"
+    },
+    {
+      icon: "Utensils",
+      title: "Питание",
+      description: "По запросу организуется питание. Гости могут готовить самостоятельно",
+      price: "по запросу"
     }
   ];
 
@@ -73,6 +79,7 @@ const Index = () => {
           </div>
           <div className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
+            <a href="#video" className="text-foreground hover:text-primary transition-colors">Видео</a>
             <a href="#gallery" className="text-foreground hover:text-primary transition-colors">Фото</a>
             <a href="#location" className="text-foreground hover:text-primary transition-colors">Как добраться</a>
             <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
@@ -129,6 +136,26 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="video" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
+            Видео о базе
+          </h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl animate-scale-in" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://vk.com/video_ext.php?oid=-110673646&id=456239017&hd=2"
+                className="absolute top-0 left-0 w-full h-full"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                title="Видео базы Fish Volga"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
