@@ -252,6 +252,106 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="accommodation" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
+            Домик с видом на Волгу
+          </h2>
+          <p className="text-xl text-muted-foreground text-center mb-12 animate-fade-in" style={{ animationDelay: '100ms' }}>
+            Комфортное размещение для троих с панорамными окнами
+          </p>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Фото домика */}
+              <div className="space-y-4 animate-fade-in" style={{ animationDelay: '200ms' }}>
+                <div className="rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="https://placehold.co/600x400/e8f5e9/2e7d32?text=Фото+домика" 
+                    alt="Домик Fish Volga"
+                    className="w-full h-[400px] object-cover"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Интерьер" 
+                      alt="Интерьер домика"
+                      className="w-full h-[200px] object-cover"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Вид+из+окна" 
+                      alt="Вид на Волгу из окна"
+                      className="w-full h-[200px] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Описание */}
+              <div className="space-y-6 animate-fade-in" style={{ animationDelay: '300ms' }}>
+                <div className="bg-background rounded-2xl p-8 shadow-lg">
+                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <Icon name="Home" className="text-primary" size={28} />
+                    Особенности размещения
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex gap-3">
+                      <Icon name="Users" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">До 3 гостей</p>
+                        <p className="text-muted-foreground">Комфортное размещение для небольшой компании</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Sparkles" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Панорамные окна</p>
+                        <p className="text-muted-foreground">Потрясающий обзор на Волгу из каждого уголка</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Mountain" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Вид на Волгу</p>
+                        <p className="text-muted-foreground">Просыпайтесь под звуки природы и речные пейзажи</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Wifi" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Все удобства</p>
+                        <p className="text-muted-foreground">Комфорт как дома: Wi-Fi, отопление, кухня</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Leaf" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Экологичность</p>
+                        <p className="text-muted-foreground">Деревянная отделка и природные материалы</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 p-4 bg-primary/10 rounded-xl">
+                    <p className="text-center text-lg font-medium">
+                      Идеальное место для отдыха всей семьёй или с друзьями
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="video" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
