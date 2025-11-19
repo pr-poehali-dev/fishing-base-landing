@@ -267,22 +267,22 @@ const Index = () => {
               <div className="space-y-4 animate-fade-in" style={{ animationDelay: '200ms' }}>
                 <div className="rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://placehold.co/600x400/e8f5e9/2e7d32?text=Фото+домика" 
-                    alt="Домик Fish Volga"
+                    src="https://cdn.poehali.dev/files/28a5a4d4-67fc-4465-bac0-37d50bd24efb.jpg" 
+                    alt="Домик Fish Volga с панорамными окнами"
                     className="w-full h-[400px] object-cover"
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Интерьер" 
+                      src="https://cdn.poehali.dev/files/be868799-3952-406d-b5aa-f4d1696860b5.jpg" 
                       alt="Интерьер домика"
                       className="w-full h-[200px] object-cover"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Вид+из+окна" 
+                      src="https://cdn.poehali.dev/files/d3964221-6148-4295-83c5-07e15a20e234.jpg" 
                       alt="Вид на Волгу из окна"
                       className="w-full h-[200px] object-cover"
                     />
