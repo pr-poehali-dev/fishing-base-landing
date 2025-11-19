@@ -68,12 +68,24 @@ const Index = () => {
 
   const gallery = [
     {
+      url: "https://cdn.poehali.dev/files/222738b3-72ea-413b-9fcb-fa22e985416b.jpg",
+      alt: "Успешная рыбалка на катере"
+    },
+    {
       url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/00dd8bb2-fe15-4e49-aa73-df9b5a7007be.jpg",
       alt: "База на берегу Камы"
     },
     {
+      url: "https://cdn.poehali.dev/files/2dd3d126-18b5-4369-88e7-1b7d186479f0.jpg",
+      alt: "Зимняя рыбалка на льду"
+    },
+    {
       url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/5775703b-e088-4f3f-98b7-838725bce6d3.jpg",
       alt: "Улов"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/200ac01b-d0ef-40f6-a378-ec64362dc085.jpg",
+      alt: "Трофейный улов на льду"
     },
     {
       url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/904cfedc-87e6-41a9-baad-1b96a9653a45.jpg",
