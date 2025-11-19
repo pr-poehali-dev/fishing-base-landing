@@ -37,7 +37,7 @@ const Index = () => {
     {
       icon: "Snowflake",
       title: "Катание на снегоходах",
-      description: "Снегоходы с санями для зимней рыбалки",
+      description: "Увлекательное катание на снегоходе",
       price: "1500₽"
     },
     {
@@ -51,45 +51,33 @@ const Index = () => {
       title: "Питание",
       description: "От обычных обедов до национальных блюд",
       price: "от 500₽"
-    },
-    {
-      icon: "Car",
-      title: "Парковка",
-      description: "Бесплатная охраняемая парковка и слип",
-      price: "бесплатно"
-    },
-    {
-      icon: "Activity",
-      title: "SUP Board и байдарки",
-      description: "Аренда водного оборудования",
-      price: "по запросу"
     }
   ];
 
   const gallery = [
     {
       url: "https://cdn.poehali.dev/files/222738b3-72ea-413b-9fcb-fa22e985416b.jpg",
-      alt: "Успешная рыбалка на катере"
-    },
-    {
-      url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/00dd8bb2-fe15-4e49-aa73-df9b5a7007be.jpg",
-      alt: "База на берегу Камы"
+      alt: ""
     },
     {
       url: "https://cdn.poehali.dev/files/2dd3d126-18b5-4369-88e7-1b7d186479f0.jpg",
-      alt: "Зимняя рыбалка на льду"
-    },
-    {
-      url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/5775703b-e088-4f3f-98b7-838725bce6d3.jpg",
-      alt: "Улов"
+      alt: ""
     },
     {
       url: "https://cdn.poehali.dev/files/200ac01b-d0ef-40f6-a378-ec64362dc085.jpg",
-      alt: "Трофейный улов на льду"
+      alt: ""
     },
     {
-      url: "https://cdn.poehali.dev/projects/34947dce-950e-4e90-aa3a-fff0186d381d/files/904cfedc-87e6-41a9-baad-1b96a9653a45.jpg",
-      alt: "Интерьер домика"
+      url: "https://cdn.poehali.dev/files/c208c3d8-2310-44fe-a549-3e8d96da65e7.jpg",
+      alt: ""
+    },
+    {
+      url: "https://cdn.poehali.dev/files/271b493f-edae-4fee-ba28-6f10c7d995a6.jpg",
+      alt: ""
+    },
+    {
+      url: "https://cdn.poehali.dev/files/a4399e5b-5b6f-423c-a1cb-7b3fd24f9297.jpg",
+      alt: ""
     }
   ];
 
@@ -301,9 +289,6 @@ const Index = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <p className="text-white font-semibold p-4">{image.alt}</p>
-                </div>
               </div>
             ))}
           </div>
@@ -350,7 +335,7 @@ const Index = () => {
                   <h3 className="text-xl font-bold mb-2">Координаты</h3>
                   <p className="text-muted-foreground">
                     55.173154° N, 49.267368° E<br />
-                    РТ, Лаишевский район, пос. Камское Устье
+                    РТ, Камско-Устьинский район, п.г.т. Камское Устье
                   </p>
                 </div>
               </div>
