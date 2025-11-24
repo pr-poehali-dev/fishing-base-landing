@@ -3,9 +3,13 @@ import Icon from "@/components/ui/icon";
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Icon name="Waves" className="text-primary" size={32} />
+      <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <img 
+            src="https://cdn.poehali.dev/files/daf991ab-a816-4810-bf71-2fe5aa38960b.png" 
+            alt="Fish Volga" 
+            className="h-12 w-auto object-contain"
+          />
           <span className="text-2xl font-bold text-primary">Камское Устье</span>
         </div>
         <div className="hidden md:flex gap-6">
