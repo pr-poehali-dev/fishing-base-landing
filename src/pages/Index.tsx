@@ -87,7 +87,7 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Waves" className="text-primary" size={32} />
-            <span className="text-2xl font-bold text-primary">Камское устье</span>
+            <span className="text-2xl font-bold text-primary">Камское Устье</span>
           </div>
           <div className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
@@ -113,7 +113,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 py-6" asChild>
-              <a href="https://wa.me/79046779322" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/79046679933" target="_blank" rel="noopener noreferrer">
                 <Icon name="MessageCircle" className="mr-2" size={24} />
                 WhatsApp
               </a>
@@ -246,6 +246,106 @@ const Index = () => {
                 <p className="text-lg font-medium text-foreground pt-4">
                   Все ваши предпожелания обговариваются индивидуально. Номера на 3, 4 и 7 человек.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-building" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 animate-fade-in">
+            Комнаты в основном корпусе
+          </h2>
+          <p className="text-xl text-muted-foreground text-center mb-12 animate-fade-in" style={{ animationDelay: '100ms' }}>
+            Комфортное проживание с современными удобствами
+          </p>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Фото комнат */}
+              <div className="space-y-4 animate-fade-in" style={{ animationDelay: '200ms' }}>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Комната" 
+                      alt="Комната в основном корпусе"
+                      className="w-full h-[250px] object-cover"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Сан+узел" 
+                      alt="Санузел с душевой кабиной"
+                      className="w-full h-[250px] object-cover"
+                    />
+                  </div>
+                  <div className="rounded-xl overflow-hidden shadow-lg col-span-2">
+                    <img 
+                      src="https://placehold.co/600x300/e8f5e9/2e7d32?text=Гостевая" 
+                      alt="Гостевая зона"
+                      className="w-full h-[300px] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Описание */}
+              <div className="space-y-6 animate-fade-in" style={{ animationDelay: '300ms' }}>
+                <div className="bg-muted/50 rounded-2xl p-8 shadow-lg">
+                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <Icon name="Building2" className="text-primary" size={28} />
+                    Удобства и оснащение
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="flex gap-3">
+                      <Icon name="BedDouble" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Комфортные комнаты</p>
+                        <p className="text-muted-foreground">Просторные номера на 3, 4 и 7 человек с удобными кроватями</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Bath" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Отдельные санузлы</p>
+                        <p className="text-muted-foreground">Современные душевые кабины в каждом санузле</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Tv" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Телевизоры в комнатах</p>
+                        <p className="text-muted-foreground">Отдых с комфортом в вечернее время</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Refrigerator" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Гостевая зона</p>
+                        <p className="text-muted-foreground">Общая гостевая с холодильниками для хранения продуктов</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <Icon name="Coffee" className="text-primary flex-shrink-0 mt-1" size={24} />
+                      <div>
+                        <p className="font-semibold text-lg">Всё необходимое</p>
+                        <p className="text-muted-foreground">Чистое бельё, полотенца, средства гигиены</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 p-4 bg-background rounded-xl">
+                    <p className="text-center text-lg font-medium">
+                      Уютная атмосфера и домашний комфорт для вашего отдыха
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -469,7 +569,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <Icon name="Phone" className="mx-auto mb-4" size={32} />
                 <h3 className="font-bold text-lg mb-2">Телефон</h3>
-                <a href="tel:+79046779322" className="hover:underline">+7 (904) 677-93-22</a>
+                <a href="tel:+79046679933" className="hover:underline">+7 (904) 667-99-33</a>
               </CardContent>
             </Card>
 
@@ -492,7 +592,7 @@ const Index = () => {
 
           <div className="flex gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-              <a href="https://wa.me/79046779322" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/79046679933" target="_blank" rel="noopener noreferrer">
                 <Icon name="MessageCircle" className="mr-2" size={24} />
                 WhatsApp
               </a>
