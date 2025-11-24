@@ -221,22 +221,22 @@ const ContentSections = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Комната" 
+                      src="https://cdn.poehali.dev/files/2504a8d5-ccc3-4ef2-83e1-ea3856434dcc.jpg" 
                       alt="Комната в основном корпусе"
                       className="w-full h-[250px] object-cover"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://placehold.co/300x200/e8f5e9/2e7d32?text=Сан+узел" 
-                      alt="Санузел с душевой кабиной"
+                      src="https://cdn.poehali.dev/files/13b0d617-81c4-4998-a13a-cc77805e78e6.jpg" 
+                      alt="Комната на несколько человек"
                       className="w-full h-[250px] object-cover"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-lg col-span-2">
                     <img 
-                      src="https://placehold.co/600x300/e8f5e9/2e7d32?text=Гостевая" 
-                      alt="Гостевая зона"
+                      src="https://cdn.poehali.dev/files/82941f36-3fb6-4ea1-9671-854d42031675.jpg" 
+                      alt="Просторная комната с видом"
                       className="w-full h-[300px] object-cover"
                     />
                   </div>
