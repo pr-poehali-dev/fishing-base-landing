@@ -150,7 +150,7 @@ const AccommodationSections = () => {
               <div className="space-y-4 animate-fade-in order-1 md:order-2" style={{ animationDelay: '200ms' }}>
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://cdn.poehali.dev/files/87e37ec8-23bd-458f-b4b8-5acba7c4b62f.jpg" 
+                    src="https://cdn.poehali.dev/files/082d5e11-ac44-4aec-84c2-e0f2939ea9d1.jpg" 
                     alt="Домик с видом на Волгу"
                     className="w-full h-[400px] object-cover"
                   />
@@ -158,15 +158,15 @@ const AccommodationSections = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://cdn.poehali.dev/files/df96f1d3-a93c-40e7-98ee-46bebb3cb62d.jpg" 
+                      src="https://cdn.poehali.dev/files/fb22bf67-9678-48c5-b00b-b9842bf57a07.jpg" 
                       alt="Интерьер домика"
                       className="w-full h-[200px] object-cover"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-lg">
                     <img 
-                      src="https://cdn.poehali.dev/files/4cdf3e6b-5b84-4f84-aca0-36e98aa2b8b5.jpg" 
-                      alt="Вид с домика"
+                      src="https://cdn.poehali.dev/files/941c8bf6-c60c-490c-a86c-7a1f89a84e15.jpg" 
+                      alt="Спальня с видом на Волгу"
                       className="w-full h-[200px] object-cover"
                     />
                   </div>
