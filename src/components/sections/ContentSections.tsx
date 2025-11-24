@@ -27,10 +27,10 @@ const services = [
     price: "800₽"
   },
   {
-    icon: "Radar",
-    title: "Аренда Garmin 1223",
-    description: "Рыбопоисковая система Panoptix",
-    price: "9000₽"
+    icon: "Waves",
+    title: "Аренда рыболовных снастей",
+    description: "Удилища, снасти, кружки и всё необходимое для рыбалки",
+    price: "от 500₽"
   },
   {
     icon: "Snowflake",
